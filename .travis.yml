@@ -17,8 +17,8 @@ deploy:
   bucket_path: "docker-training-001"
   on:
     branch: main
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
 
 
   # url Dockertraining001-env.eba-udr2ktfv.us-east-1.elasticbeanstalk.com
