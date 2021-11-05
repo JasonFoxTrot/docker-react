@@ -11,7 +11,7 @@ services:
       - .:/app
     environment:
       - CHOKIDAR_USEPOLLING=true
-      # - CI=true
+      - CI=true
   tests:
     build: 
       context: .
@@ -21,5 +21,5 @@ services:
       - .:/app
     environment:
       - CHOKIDAR_USEPOLLING=true
-      # - CI=true
+      - CI=true
     command: ["npm", "run", "test"]
