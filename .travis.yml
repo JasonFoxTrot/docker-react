@@ -7,3 +7,18 @@ before_install:
 
 script: 
   - docker run -e CI=true fennecdock/docker-react npm test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-training-001"
+  env: "Dockertraining001-env"
+  bucket_name: "elasticbeanstalk-us-east-1-705784952718"
+  bucket_path: "docker-training-001"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+
+
+  # url Dockertraining001-env.eba-udr2ktfv.us-east-1.elasticbeanstalk.com
