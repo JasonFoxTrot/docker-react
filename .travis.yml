@@ -13,12 +13,12 @@ deploy:
   region: "us-east-1"
   app: "docker-training-001"
   env: "Dockertraining001-env"
-  bucket_name: "elasticbeanstalk-us-east-1-705784952718"
+  bucket: "elasticbeanstalk-us-east-1-705784952718"
   bucket_path: "docker-training-001"
   on:
     branch: main
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  aws_access_key_id: $AWS_ACCESS_KEY_ID
+  aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
 
 
-  # url Dockertraining001-env.eba-udr2ktfv.us-east-1.elasticbeanstalk.com
+  # url http://dockertraining001-env.eba-udr2ktfv.us-east-1.elasticbeanstalk.com/
